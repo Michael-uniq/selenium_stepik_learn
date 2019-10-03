@@ -35,4 +35,4 @@ this is a structure of my project
     3_2_step11.png
     3_2_step11_test_abs_project.py
     3_2_step12_test_abs_unittest.py
-    3_2_step13_unittest_for_1_6_10.py       # rewrite 1_6_step10_findErrorNoSuchElementException.py
+    3_2_step13_unittest_for_1_6_10.py       # rewrite 1_6_step10_findErrorNoSuchElementException.p
