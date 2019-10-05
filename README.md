@@ -35,3 +35,8 @@
   -     3_2_step11_test_abs_project.py
   -     3_2_step12_test_abs_unittest.py
   -     3_2_step13_unittest_for_1_6_10.py     # rewrite 1_6_step10_findErrorNoSuchElementException.py
+  -     test_abs_project_step_3_3_8.py
+  -     test_fixture1.py
+  -     test_fixture2.py
+  -     test_fixture3.py
+  -     test_fixture4.py
