@@ -3,11 +3,11 @@ from selenium import webdriver
 
 
 @pytest.fixture(scope="function")
-def dr():
-    print("\nstart dr for test..")
+def browser():
+    print("\nstart browser for test..")
     dr = webdriver.Chrome()
     yield dr
-    print("\nquit dr..")
+    print("\nquit browser..")
     dr.quit()
 
 
@@ -20,8 +20,8 @@ languages = [
 labels = ["russian", "german", "ukrainian", "english", ]
 
 @pytest.mark.parametrize("code, lang", languages, ids=labels)
-def test_guest_should_see_login_link(dr, code, lang):
+def test_guest_should_see_login_link(browser, code, lang):
     link = "http://selenium1py.pythonanywhere.com/{}/".format(code)
     print("Проверяемый язык %s" % lang)
-    dr.get(link)
-    dr.find_element_by_css_selector("#login_link")
+    browser.get(link)
+    browser.find_element_by_css_selector("#login_link")
